@@ -1,6 +1,6 @@
 #!/bin/bash
 brew install --verbose --build-bottle Formula/"$PACKAGE".rb
-brew bottle valet-php@$PACKAGE --json --force-core-tap
+brew bottle $PACKAGE --json --force-core-tap
 brew install jq
 bottleJson=$( cat *.json )
 FILENAME=$(echo $bottleJson | jq --raw-output '."'"$PACKAGE"'"."bottle".tags.'"$OS"'.filename')
