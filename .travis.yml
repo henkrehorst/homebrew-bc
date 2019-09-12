@@ -1,0 +1,82 @@
+os: osx
+osx_image:
+  - xcode10
+  - xcode9.2
+  - xcode10.2
+addons:
+  homebrew:
+    update: true
+jobs:
+  include:
+    - stage: apr-util-bc
+      osx_image: xcode10
+      env:
+        - PACKAGE=apr-util-bc
+        - OS=high_sierra
+      script: bash scripts/travisbuild
+    - stage: apr-util-bc
+      osx_image: xcode9.2
+      env:
+        - PACKAGE=apr-util-bc
+        - OS=sierra
+      script: bash scripts/travisbuild
+    - stage: apr-util-bc
+      osx_image: xcode10.2
+      env:
+        - PACKAGE=apr-util-bc
+        - OS=mojave
+      script: bash scripts/travisbuild
+    - stage: curl-openssl-bc
+      osx_image: xcode10
+      env:
+        - PACKAGE=curl-openssl-bc
+        - OS=high_sierra
+      script: bash scripts/travisbuild
+    - stage: curl-openssl-bc
+      osx_image: xcode9.2
+      env:
+        - PACKAGE=curl-openssl-bc
+        - OS=sierra
+      script: bash scripts/travisbuild
+    - stage: curl-openssl-bc
+      osx_image: xcode10.2
+      env:
+        - PACKAGE=curl-openssl-bc
+        - OS=mojave
+      script: bash scripts/travisbuild
+    - stage: httpd-bc
+      osx_image: xcode10
+      env:
+        - PACKAGE=httpd-bc
+        - OS=high_sierra
+      script: bash scripts/travisbuild
+    - stage: httpd-bc
+      osx_image: xcode9.2
+      env:
+        - PACKAGE=httpd-bc
+        - OS=sierra
+      script: bash scripts/travisbuild
+    - stage: httpd-bc
+      osx_image: xcode10.2
+      env:
+        - PACKAGE=httpd-bc
+        - OS=mojave
+      script: bash scripts/travisbuild
+    - stage: openssl-bc
+      osx_image: xcode10
+      env:
+          - PACKAGE=openssl-bc
+          - OS=high_sierra
+      script: bash scripts/travisbuild
+    - stage: openssl-bc
+      osx_image: xcode9.2
+      env:
+        - PACKAGE=openssl-bc
+        - OS=sierra
+      script: bash scripts/travisbuild
+    - stage: openssl-bc
+      osx_image: xcode10.2
+      env:
+        - PACKAGE=openssl-bc
+        - OS=mojave
+      script: bash scripts/travisbuild
