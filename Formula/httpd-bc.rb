@@ -15,7 +15,7 @@ class HttpdBc < Formula
   depends_on "henkrehorst/bc/apr-util-bc"
   depends_on "brotli"
   depends_on "nghttp2"
-  depends_on "henkrehorst/openssl/openssl-old"
+  depends_on "henkrehorst/bc/openssl-bc"
   depends_on "pcre"
   uses_from_macos "zlib"
 
@@ -63,7 +63,7 @@ class HttpdBc < Formula
            "--with-libxml2=#{MacOS.sdk_path_if_needed}/usr",
            "--with-mpm=prefork",
            "--with-nghttp2=#{Formula["nghttp2"].opt_prefix}",
-           "--with-ssl=#{Formula["henkrehorst/openssl/openssl-old"].opt_prefix}",
+           "--with-ssl=#{Formula["henkrehorst/bc/openssl-bc"].opt_prefix}",
            "--with-pcre=#{Formula["pcre"].opt_prefix}",
            "--with-z=#{MacOS.sdk_path_if_needed}/usr",
            "--disable-lua",

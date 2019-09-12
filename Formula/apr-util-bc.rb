@@ -15,14 +15,14 @@ class AprUtilBc < Formula
   keg_only :provided_by_macos, "Apple's CLT package contains apr"
 
   depends_on "apr"
-  depends_on "henkrehorst/openssl/openssl-old"
+  depends_on "henkrehorst/bc/openssl-bc"
 
   def install
     # Install in libexec otherwise it pollutes lib with a .exp file.
     system "./configure", "--prefix=#{libexec}",
            "--with-apr=#{Formula["apr"].opt_prefix}",
            "--with-crypto",
-           "--with-openssl=#{Formula["henkrehorst/openssl/openssl-old"].opt_prefix}"
+           "--with-openssl=#{Formula["henkrehorst/bc/openssl-bc"].opt_prefix}"
     system "make"
     system "make", "install"
     bin.install_symlink Dir["#{libexec}/bin/*"]
