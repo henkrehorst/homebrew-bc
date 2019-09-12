@@ -9,5 +9,5 @@ LOCALFILE=$(echo $bottleJson | jq --raw-output '."'"$PACKAGE"'"."bottle".tags.'"
 echo $LOCALFILE
 ls -all
 #         Transfer to bintray
-curl -T $LOCALFILE -uhenkrehorst:$BINTRAY_KEY https://api.bintray.com/content/henkrehorst/homebrew-php/valet-php/valet-php/$FILENAME
-curl -T *.json -uhenkrehorst:$BINTRAY_KEY https://api.bintray.com/content/henkrehorst/homebrew-php/valet-php/valet-php/new@$PACKAGE.$OS.json
+curl -T $LOCALFILE -uhenkrehorst:$BINTRAY_KEY https://api.bintray.com/content/henkrehorst/homebrew-bc/homebrew-bc/homebrew-bc/$FILENAME
+curl -T *.json -uhenkrehorst:$BINTRAY_KEY https://api.bintray.com/content/henkrehorst/homebrew-bc/homebrew-bc/homebrew-bc/new@$PACKAGE.$OS.json
