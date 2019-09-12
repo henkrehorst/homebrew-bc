@@ -3,9 +3,9 @@ brew install --verbose --build-bottle Formula/"$PACKAGE".rb
 brew bottle $PACKAGE --json --force-core-tap
 brew install jq
 bottleJson=$( cat *.json )
-FILENAME=$(echo $bottleJson | jq --raw-output '."'"$PACKAGE"'"."bottle".tags.'"$OS"'.filename')
+FILENAME=$(echo $bottleJson | jq --raw-output '."'henkrehorst/bc/"$PACKAGE"'"."bottle".tags.'"$OS"'.filename')
 echo $FILENAME
-LOCALFILE=$(echo $bottleJson | jq --raw-output '."'"$PACKAGE"'"."bottle".tags.'"$OS"'.local_filename')
+LOCALFILE=$(echo $bottleJson | jq --raw-output '."'henkrehorst/bc/"$PACKAGE"'"."bottle".tags.'"$OS"'.local_filename')
 echo $LOCALFILE
 ls -all
 #         Transfer to bintray
