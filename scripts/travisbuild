@@ -1,4 +1,5 @@
 #!/bin/bash
+brew tap henkrehorst/bc
 brew install --verbose --build-bottle Formula/"$PACKAGE".rb
 brew bottle $PACKAGE --json --force-core-tap
 brew install jq
