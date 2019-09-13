@@ -10,9 +10,10 @@ class OpensslBc < Formula
   sha256 "cabd5c9492825ce5bd23f3c3aeed6a97f8142f606d893df216411f07d1abab96"
 
   bottle do
-    sha256 "c4a762d719c2be74ac686f1aafabb32f3c5d5ff3a98935c4925a1ddb9c750ee1" => :mojave
-    sha256 "b72b8d9e582713d909936d7236542b366f07d800f8ec0eaa2d487a95c4e93bd9" => :high_sierra
-    sha256 "e556bbb8902700cd3cb896e0635ccb517feb4e1266911840c4b3c9e9cd044f7e" => :sierra
+    root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
+    sha256 "a4b8eb769386d78f636f252cd12c0d6da4353505d254021c83ce985b5123a210" => :mojave
+    sha256 "7db2b1207a9b463e74d5269b7181b95f93b3e5aa7fcdfde1a7a23337e5bab057" => :high_sierra
+    sha256 "b916afa06c270d6b5ac04627df5d2867c166f1c071bb4e13b58bc55fa4d65386" => :sierra
   end
 
   keg_only :provided_by_macos,

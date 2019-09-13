@@ -6,10 +6,11 @@ class AprUtilBc < Formula
   revision 2
 
   bottle do
+    root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
     rebuild 1
-    sha256 "bdc898744b7e570af5bf04a964d216e75285cce455b125e1d9b0df1510e3bdbf" => :mojave
-    sha256 "8da18e2dce508adbd19b2330cc8cc822a73c3d282fec7061e430a5edf6728d02" => :high_sierra
-    sha256 "2b8fe46f5c4c9e53c3727e4221f4189a5c27621c60c56518fc0c259ed0ebfa04" => :sierra
+    sha256 "f58b787f99db4fed00b54027a0856c40d07693c02cd21b1d025a6430355ee0d6" => :mojave
+    sha256 "79a4b42ec945afdad0bccf8929d128a45085e3382d5bd7688e897d9a98f08185" => :high_sierra
+    sha256 "cf36aa4aeb7f61f7313c5ec7979cb61bc3fd8ebe3f3341912a85c2a99e5d0672" => :sierra
   end
 
   keg_only :provided_by_macos, "Apple's CLT package contains apr"

@@ -6,9 +6,10 @@ class HttpdBc < Formula
   revision 1
 
   bottle do
-    sha256 "9f9969abde4a61949b0279f68d6fcc616d1546dd2c1b4fd61012bde1f5d27ee8" => :mojave
-    sha256 "143af690fd1f26f07e79009da6e674a0cb56c190f6fb486f9e61f82a5ab36a0a" => :high_sierra
-    sha256 "9a085a0b728b5bc75bda265d7d4c5360187038eb339c43a681d789599b814dcf" => :sierra
+    root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
+    sha256 "5de81691a8aa78300335f3868dfbf5ae56fb645938f34c22f6cbdf0839c6da1f" => :mojave
+    sha256 "c334d1ab62ae44f48e404814794e8e713b7a68ea58ea28aa21aa881ad7fe0ecd" => :high_sierra
+    sha256 "56565a3ec64b898c5c7edf51215e6a967cb35b81b29d652bc3750c145734ae1f" => :sierra
   end
 
   depends_on "apr"

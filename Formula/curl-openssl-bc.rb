@@ -5,9 +5,10 @@ class CurlOpensslBc < Formula
   sha256 "0a855e83be482d7bc9ea00e05bdb1551a44966076762f9650959179c89fce509"
 
   bottle do
-    sha256 "1fd4e12d9b493c08e289ef85df77da1836a3bfda993307873453538854f50c25" => :mojave
-    sha256 "288259c4c8d8c58cb4221344882abfc96093ed26cad33ced10b4f3521405abd0" => :high_sierra
-    sha256 "8dea41e51d701ce70b82ab198281a9868f85c7404058a790690f5f2bc7572428" => :sierra
+    root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
+    sha256 "c53d6ec19df5416a9b482ec45f397417137144b34dee6a09394ec74dff337fb7" => :mojave
+    sha256 "c476debf62a3aed6b42733df8f3aabe5912c181c5875f16fc13f814cedcab2e5" => :high_sierra
+    sha256 "6d1ff896b9e7da3e224a01cd3aaac2cb124c90467a65fb5e892abcc11124f507" => :sierra
   end
 
   head do
