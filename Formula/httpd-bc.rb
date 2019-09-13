@@ -7,6 +7,7 @@ class HttpdBc < Formula
 
   bottle do
     root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
+    rebuild 1
     sha256 "5de81691a8aa78300335f3868dfbf5ae56fb645938f34c22f6cbdf0839c6da1f" => :mojave
     sha256 "c334d1ab62ae44f48e404814794e8e713b7a68ea58ea28aa21aa881ad7fe0ecd" => :high_sierra
     sha256 "56565a3ec64b898c5c7edf51215e6a967cb35b81b29d652bc3750c145734ae1f" => :sierra

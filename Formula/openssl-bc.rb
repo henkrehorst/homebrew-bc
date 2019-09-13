@@ -11,6 +11,7 @@ class OpensslBc < Formula
 
   bottle do
     root_url "https://dl.bintray.com/henkrehorst/homebrew-bc"
+    rebuild 1
     sha256 "a4b8eb769386d78f636f252cd12c0d6da4353505d254021c83ce985b5123a210" => :mojave
     sha256 "7db2b1207a9b463e74d5269b7181b95f93b3e5aa7fcdfde1a7a23337e5bab057" => :high_sierra
     sha256 "b916afa06c270d6b5ac04627df5d2867c166f1c071bb4e13b58bc55fa4d65386" => :sierra
